@@ -86,183 +86,246 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-  .content-wrapper {
-    outline: 3px dotted red;
-    width: 90%;
-  }
+.content-wrapper {
+  outline: 3px dotted red;
+  width: 90%;
+  margin: 50px 0;
+}
 
-  /* ----------------Base Header & Footer Styles---------------- */
+/* ----------------Base Header & Footer Styles---------------- */
 
-  /* Header Styles */
-  header {
-    display: flex;
-    justify-content: center;
-    /* flex-flow: row wrap; */
-  }
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center;
+  /* flex-flow: row wrap; */
+  padding: 15px 0;
+}
 
-  header .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
 
-  header .header-divider{
+header .header-divider {
+  width: 100%;
+}
 
-  }
+header img {
+  margin: 0;
+  padding-bottom: 10px;
+  width: 60%;
+}
 
-  header nav{
-    display: flex;
-    justify-content: space-around;
-  }
+header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
 
-  header nav ul {
-    
+header nav ul {
+  margin: 0;
+  padding-top: 20px;
+}
 
-  }
+header nav ul li {
+  display: inline;
+}
 
-  header nav ul li {
-    display: inline;
-  }
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  /* Footer Styles */
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+footer p {
+  margin: 0;
+}
 
-  footer .footer-content {
-    
-  }
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
 
-  footer .contact{
+footer .footer-content {
+}
 
-  }
+.footer-content h4 {
+  padding: 20px 0;
+}
 
-  footer .social{
+footer .contact {
+  padding-bottom: 50px;
+}
 
-  }
+footer .social {
+  padding-bottom: 50px;
+}
 
-  footer .social-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  footer .social-icons p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  footer .copyright{
+footer .copyright {
+  padding: 20px 0;
+}
 
-  }
+/* ----------------Mobile Styles - Homepage ---------------- */
 
+.hero-area {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
 
+/* Aside */
+aside {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
 
-  /* ----------------Mobile Styles - Homepage ---------------- */
+aside .form-description {
+  margin-bottom: 30px;
+}
 
-  
-  .hero-area {
-    display: flex;
-    justify-content: center;
+.form-description h3 {
+  padding: 20px 0;
+}
 
-  } 
+aside .form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
 
-  /* Aside */
-  aside {
-    display: flex;
-    justify-content: center;
+aside .form h3 {
+  padding: 20px 0;
+}
 
-  }
-  
-  aside .form-description {
+/* Add padding to input boxes */
+aside .form #email-input {
+  padding: 1em;
+}
 
-  }
+aside .form #download-button {
+  padding: 20px 0;
+}
 
-  aside .form {
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
 
-  }
+.features h2 {
+  margin: 0;
+  padding-bottom: 60px;
+}
 
-  /* Features */
-  .features {
-    display: flex;
-    justify-content: center;
-  }
+.features p {
+  margin: 0;
+}
 
-  .feature-items {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    
-  }
+.features article {
+  width: 62%;
+  text-align: center;
+  margin: 30px 0;
+}
 
-  .font-awesome-icon {
+.feature-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
 
-  }
+.font-awesome-icon {
+  padding-bottom: 40px;
+}
 
-  .features-item-description {
+.features-item-description {
+}
 
-  }
+/* Reviews */
+.reviews {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
 
-  /* Reviews */
-  .reviews {
-    display: flex;
-    justify-content: center;
-  }
+.reviews h2 {
+  padding-bottom: 40px;
+}
 
- /* ==========================================================================
+.reviews h3 {
+  width: 52%;
+  padding: 20px 0;
+}
+
+/* ==========================================================================
    About Page Styles
    ========================================================================== */
-   
-   /* Mission Section */
-   .mission {
-    display: flex;
-    justify-content: center;
-   }
 
-   .mission-content {
+/* Mission Section */
+.mission {
+  display: flex;
+  justify-content: center;
+}
 
-   }
+.mission-content {
+}
 
-   /* Map Section */
-   .map {
+/* Map Section */
+.map {
+}
 
-   }
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
 
-   /* Contact Section */
-   .contact-section {
-    display: flex;
-    justify-content: center;    
-   }
+.contact-content {
+  
+}
 
-   .contact-content {
+.contact-content p {
+  margin: 0;
+}
 
-   }
-
-   /* ==========================================================================
+/* ==========================================================================
    FAQ Page Styles
    ========================================================================== */
 
-   .faq {
-    display: flex;
-    justify-content: center;
-   }
+.faq {
+  display: flex;
+  justify-content: center;
+}
 
-   .faq .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
-   }
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
 
-   .faq-content {
-
-   }
+.faq-content {
+}
 
 /* ==========================================================================
    Helper classes
@@ -437,4 +500,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
