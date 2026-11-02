@@ -188,6 +188,7 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   margin: 50px 0;
 }
 
@@ -415,16 +416,158 @@ aside .form #download-button {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles here */
+  .content-wrapper {
+  width: 640px;
+  margin: 100px 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* ----------------Base Header & Footer Styles---------------- */
+
+/* Header Styles */
+header {
+  padding: 33px 0;
 }
+
+header .content-wrapper {
+  /* width: 100%; */
+  justify-content: space-between;
+}
+
+/* Not needed? */
+header img {
+  margin: 0;
+  padding-bottom: 0;
+  width: 30%;
+}
+
+header nav {
+  width: 25%;
+}
+
+header nav ul {
+  margin: 0;
+  padding-top: 0;
+}
+
+header .header-divider {
+  display: none;
+}
+
+/* Footer Styles */
+
+footer .content-wrapper {
+  width: 80%;
+  margin: 100px 0;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .footer-content h4 {
+  padding-bottom: 40px;
+} */
+
+footer .contact {
+  /* padding-bottom: 0; */
+  margin: 0;
+}
+
+footer .social {
+  /* padding-bottom: 0; */
+  margin: 0;
+}
+
+/* footer .social-icons {
+
+}
+
+footer .social-icons p {
+
+} */
+
+footer .copyright {
+  /* display: flex;
+  justify-content: center;
+  width: 40%;
+  text-align: center; */
+}
+
+/* ----------------Mobile Styles - Homepage ---------------- */
+
+
+/* Aside */
+
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside .form-description {
+  margin: 0;
+  width: 40%;
+}
+
+
+aside .form {
+  margin: 0;
+  width: 40%;
+}
+
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.features h2 {
+  /* margin: 0; */
+  padding-bottom: 20px;
+}
+
+.features article {
+  width: 30%;
+  padding: 0 10%;
+}
+
+.feature-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /* width: 80%; */
+}
+
+.font-awesome-icon {
+  padding-bottom: 30px;
+}
+
+.features-item-description {
+}
+
+/* Reviews */
+.reviews article {
+
+
+}
+
+.review article div {
+
+}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+}
+
 
 /* ==========================================================================
    Print styles.
