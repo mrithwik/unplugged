@@ -87,9 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .content-wrapper {
-  outline: 3px dotted red;
   width: 90%;
-  margin: 50px 0;
 }
 
 /* ----------------Base Header & Footer Styles---------------- */
@@ -98,41 +96,34 @@ textarea {
 header {
   display: flex;
   justify-content: center;
-  /* flex-flow: row wrap; */
-  padding: 15px 0;
 }
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  margin: 0;
+  flex-flow: row-wrap;
 }
 
-header .header-divider {
+.header-divider {
   width: 100%;
 }
 
 header img {
-  margin: 0;
-  padding-bottom: 10px;
-  width: 60%;
+
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
   width: 60%;
 }
 
 header nav ul {
-  margin: 0;
-  padding-top: 20px;
+  display: flex;
+  width: 100%;
 }
 
 header nav ul li {
-  display: inline;
+
 }
 
 /* Footer Styles */
@@ -144,7 +135,7 @@ footer {
 }
 
 footer p {
-  margin: 0;
+
 }
 
 footer .content-wrapper {
@@ -153,129 +144,110 @@ footer .content-wrapper {
 }
 
 footer .footer-content {
+
 }
 
 .footer-content h4 {
-  padding: 20px 0;
+
 }
 
 footer .contact {
-  padding-bottom: 50px;
+
 }
 
 footer .social {
-  padding-bottom: 50px;
+
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
-footer .social-icons p {
+footer .social p {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer .copyright {
-  padding: 20px 0;
+
 }
 
 /* ----------------Mobile Styles - Homepage ---------------- */
 
 .hero-area {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 50px 0;
 }
 
 /* Aside */
 aside {
   display: flex;
-  justify-content: center;
-  margin: 50px 0;
 }
 
 aside .form-description {
-  margin-bottom: 30px;
+
 }
 
 .form-description h3 {
-  padding: 20px 0;
+
 }
 
 aside .form {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
+
 }
 
 aside .form h3 {
-  padding: 20px 0;
+
 }
 
 /* Add padding to input boxes */
 aside .form #email-input {
-  padding: 1em;
+
 }
 
 aside .form #download-button {
-  padding: 20px 0;
+
 }
 
 /* Features */
 .features {
   display: flex;
-  justify-content: center;
-  margin: 50px 0;
 }
 
 .features h2 {
-  margin: 0;
-  padding-bottom: 60px;
+
 }
 
 .features p {
-  margin: 0;
+
 }
 
 .features article {
-  width: 62%;
-  text-align: center;
-  margin: 30px 0;
+  width: 60%;
 }
 
-.feature-items {
+.features .feature-items {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 
 .font-awesome-icon {
-  padding-bottom: 40px;
+
 }
 
 .features-item-description {
+
 }
 
 /* Reviews */
 .reviews {
   display: flex;
-  justify-content: center;
-  margin: 50px 0;
 }
 
 .reviews h2 {
-  padding-bottom: 40px;
+
 }
 
 .reviews h3 {
-  width: 52%;
-  padding: 20px 0;
+  width: 50%;
 }
 
 /* ==========================================================================
@@ -284,21 +256,21 @@ aside .form #download-button {
 
 /* Mission Section */
 .mission {
-  display: flex;
-  justify-content: center;
+
 }
 
 .mission-content {
+
 }
 
 /* Map Section */
 .map {
+
 }
 
 /* Contact Section */
 .contact-section {
   display: flex;
-  justify-content: center;
 }
 
 .contact-content {
@@ -306,7 +278,7 @@ aside .form #download-button {
 }
 
 .contact-content p {
-  margin: 0;
+
 }
 
 /* ==========================================================================
@@ -315,17 +287,15 @@ aside .form #download-button {
 
 .faq {
   display: flex;
-  justify-content: center;
 }
 
 .faq .content-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 
 .faq-content {
+
 }
 
 /* ==========================================================================
@@ -418,150 +388,6 @@ aside .form #download-button {
 
 @media only screen and (min-width: 768px) {
   /* Tablet Styles here */
-  .content-wrapper {
-  width: 640px;
-  margin: 100px 0;
-}
-
-/* ----------------Base Header & Footer Styles---------------- */
-
-/* Header Styles */
-header {
-  padding: 33px 0;
-}
-
-header .content-wrapper {
-  /* width: 100%; */
-  justify-content: space-between;
-}
-
-/* Not needed? */
-header img {
-  margin: 0;
-  padding-bottom: 0;
-  width: 30%;
-}
-
-header nav {
-  width: 25%;
-}
-
-header nav ul {
-  margin: 0;
-  padding-top: 0;
-}
-
-header .header-divider {
-  display: none;
-}
-
-/* Footer Styles */
-
-footer .content-wrapper {
-  width: 80%;
-  margin: 100px 0;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* .footer-content h4 {
-  padding-bottom: 40px;
-} */
-
-footer .contact {
-  /* padding-bottom: 0; */
-  margin: 0;
-}
-
-footer .social {
-  /* padding-bottom: 0; */
-  margin: 0;
-}
-
-/* footer .social-icons {
-
-}
-
-footer .social-icons p {
-
-} */
-
-footer .copyright {
-  /* display: flex;
-  justify-content: center;
-  width: 40%;
-  text-align: center; */
-}
-
-/* ----------------Mobile Styles - Homepage ---------------- */
-
-
-/* Aside */
-
-aside .content-wrapper {
-  margin: 50px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-aside .form-description {
-  margin: 0;
-  width: 40%;
-}
-
-
-aside .form {
-  margin: 0;
-  width: 40%;
-}
-
-
-/* Features */
-.features {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-.features h2 {
-  /* margin: 0; */
-  padding-bottom: 20px;
-}
-
-.features article {
-  width: 30%;
-  padding: 0 10%;
-}
-
-.feature-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  /* width: 80%; */
-}
-
-.font-awesome-icon {
-  padding-bottom: 30px;
-}
-
-.features-item-description {
-}
-
-/* Reviews */
-.reviews article {
-
-
-}
-
-.review article div {
-
-}
-
-
 }
 
 @media only screen and (min-width: 1200px) {
