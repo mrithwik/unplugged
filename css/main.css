@@ -132,9 +132,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
@@ -160,7 +162,7 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
   margin: 0;
 }
 
@@ -171,7 +173,8 @@ header .content-wrapper {
   background: #3a3a3a;
 }
 
-header img {
+header figure {
+  width: 60%;
 }
 
 header nav {
@@ -242,6 +245,9 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url("../img/unplugged-retreat.jpg") center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -264,10 +270,6 @@ aside .form-description {
 .form-description h3 {
 }
 
-aside .form {
-  margin-top: 30px;
-}
-
 aside .form h3 {
 }
 
@@ -278,8 +280,37 @@ aside .form #email-input {
 aside .form #download-button {
 }
 
+/* Styling the homepage form */
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Features */
 .features {
+  background: url("../img/unplugged-retreat-features.jpg") center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
@@ -471,33 +502,6 @@ aside .form #download-button {
 
 .clearfix::after {
   clear: both;
-}
-
-/* Styling the homepage form */
-aside .form {
-  margin-top: 30px;
-}
-
-input[type="text"] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type="button"] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -749,8 +753,6 @@ input[type="button"] {
   footer h4 {
     font-size: 1.875em;
   }
-
-
 
   /* ==========================================================================
    About Page
