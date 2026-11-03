@@ -86,6 +86,56 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* General Styles */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
+img {
+}
+
+figure {
+}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -111,11 +161,10 @@ header .content-wrapper {
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 20px 0;
 }
 
 header img {
-
 }
 
 header nav {
@@ -129,7 +178,6 @@ header nav ul {
 }
 
 header nav ul li {
-
 }
 
 /* Footer Styles */
@@ -149,11 +197,9 @@ footer .content-wrapper {
 }
 
 footer .footer-content {
-
 }
 
 .footer-content h4 {
-
 }
 
 footer .contact {
@@ -161,7 +207,6 @@ footer .contact {
 }
 
 footer .social {
-
 }
 
 footer .social-icons {
@@ -170,8 +215,10 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social p {
+footer .social-icons p {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .copyright {
@@ -192,28 +239,22 @@ aside {
 }
 
 aside .form-description {
-
 }
 
 .form-description h3 {
-
 }
 
 aside .form {
-
 }
 
 aside .form h3 {
-
 }
 
 /* Add padding to input boxes */
 aside .form #email-input {
-
 }
 
 aside .form #download-button {
-
 }
 
 /* Features */
@@ -243,11 +284,9 @@ aside .form #download-button {
 }
 
 .font-awesome-icon {
-
 }
 
 .features-item-description {
-
 }
 
 /* Reviews */
@@ -276,12 +315,10 @@ aside .form #download-button {
 }
 
 .mission-content {
-
 }
 
 /* Map Section */
 .map {
-
 }
 
 /* Contact Section */
@@ -291,7 +328,6 @@ aside .form #download-button {
 }
 
 .contact-content {
-  
 }
 
 .contact-content p {
@@ -538,66 +574,63 @@ aside .form #download-button {
   .faq h2 {
     width: 100%;
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
- /*Desktop styles here */  
- 
-    header {
-        padding: 15px 0;
-    }
- 
-    .content-wrapper {
-         max-width: 960px;
-    }
- 
-     /* Hero */
-    .hero-area h1 {
-        width: 80%;
-    }
- 
-    /* Aside */
-    aside .content-wrapper {
-        justify-content: space-around;
-    }
- 
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-        width: 30%;
-    }
- 
-    /* Features */
-    .features h2 {
-        width: 90%;
-    }
- 
-    .features article {
-        flex-basis: 33%;
-    }
- 
-    /* Reviews */ 
-    .reviews article div {
-        width: 42%;
-    }
- 
-/* ==========================================================================
+  /*Desktop styles here */
+
+  header {
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
    About Page
    ========================================================================== */
-    .mission h2,
-    .contact-section .content-wrapper h2 {
-        width: 95%;
-    }
- 
-/* ==========================================================================
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ==========================================================================
    FAQ Page
    ========================================================================== */
-    .faq h2 {
-        width: 100%;
-    }
- 
+  .faq h2 {
+    width: 100%;
+  }
 }
-
 
 /* ==========================================================================
    Print styles.
