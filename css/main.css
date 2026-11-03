@@ -97,11 +97,14 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -111,12 +114,14 @@ a {
 
 h2 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   margin: 20px 0;
   font-size: 1.125em;
 }
@@ -148,6 +153,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -162,6 +168,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header img {
@@ -169,6 +176,9 @@ header img {
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -178,6 +188,7 @@ header nav ul {
 }
 
 header nav ul li {
+  font-size: 1.125em;
 }
 
 /* Footer Styles */
@@ -186,6 +197,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer p {
@@ -232,10 +244,18 @@ footer .copyright {
   justify-content: center;
 }
 
+.hero-area h1 {
+  font-size: 2.5em;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* Aside */
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 aside .form-description {
@@ -245,6 +265,7 @@ aside .form-description {
 }
 
 aside .form {
+  margin-top: 30px;
 }
 
 aside .form h3 {
@@ -269,6 +290,7 @@ aside .form #download-button {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features article {
@@ -293,10 +315,12 @@ aside .form #download-button {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -310,6 +334,7 @@ aside .form #download-button {
 
 /* Mission Section */
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
@@ -323,6 +348,7 @@ aside .form #download-button {
 
 /* Contact Section */
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
 }
@@ -339,6 +365,7 @@ aside .form #download-button {
    ========================================================================== */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
@@ -353,10 +380,15 @@ aside .form #download-button {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -441,6 +473,33 @@ aside .form #download-button {
   clear: both;
 }
 
+/* Styling the homepage form */
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -454,6 +513,16 @@ aside .form #download-button {
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   /* Header */
@@ -470,6 +539,10 @@ aside .form #download-button {
     width: 20%;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav ul {
     justify-content: space-between;
   }
@@ -479,6 +552,12 @@ aside .form #download-button {
   }
 
   /* Hero area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -495,6 +574,11 @@ aside .form #download-button {
   }
 
   /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     align-items: center;
@@ -503,7 +587,7 @@ aside .form #download-button {
   }
 
   .features .feature-item-description {
-    /* width: 30%; */
+    width: 62%;
   }
 
   /* Reviews */
@@ -512,8 +596,17 @@ aside .form #download-button {
     justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -524,6 +617,7 @@ aside .form #download-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -559,6 +653,10 @@ aside .form #download-button {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /*             */
   /*  FAQ Page  */
   /*           */
@@ -574,21 +672,44 @@ aside .form #download-button {
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here */
 
-  header {
-    padding: 15px 0;
-  }
-
+  /* General Styles */
   .content-wrapper {
     max-width: 960px;
   }
 
+  /* Header */
+  header {
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
   /* Hero */
   .hero-area h1 {
+    font-size: 3.75em;
     width: 80%;
   }
 
@@ -602,6 +723,10 @@ aside .form #download-button {
     width: 30%;
   }
 
+  .form-description p {
+    font-size: 1.125em;
+  }
+
   /* Features */
   .features h2 {
     width: 90%;
@@ -612,9 +737,20 @@ aside .form #download-button {
   }
 
   /* Reviews */
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   .reviews article div {
     width: 42%;
   }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+
 
   /* ==========================================================================
    About Page
@@ -622,6 +758,11 @@ aside .form #download-button {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /* ==========================================================================
@@ -629,6 +770,13 @@ aside .form #download-button {
    ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
