@@ -268,7 +268,7 @@ aside .form-description {
 }
 
 .form-description h3 {
-}
+} 
 
 aside .form h3 {
 }
@@ -375,6 +375,18 @@ input[type="button"] {
 
 /* Map Section */
 .map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Contact Section */
