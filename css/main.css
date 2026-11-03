@@ -219,7 +219,7 @@ footer .footer-content {
 }
 
 .footer-content h4 {
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
 footer .contact {
@@ -664,7 +664,7 @@ input[type="button"] {
   footer .content-wrapper {
     width: 65%;
   }
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
