@@ -116,6 +116,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3,
@@ -215,6 +216,7 @@ footer .footer-content {
 }
 
 .footer-content h4 {
+  margin: 20px 0;
 }
 
 footer .contact {
@@ -231,9 +233,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -352,6 +362,7 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   background-color: #2a423a;
+  /* flex-flow: row wrap; */
 }
 
 .reviews h2 {
@@ -568,11 +579,15 @@ input[type="button"] {
     justify-content: space-between;
   }
 
-  .header divider {
+  .header-divider {
     display: none;
   }
 
   /* Hero area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -604,11 +619,17 @@ input[type="button"] {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+    /* width: 30%; */
     flex-basis: 50%;
+    
   }
 
   .features .feature-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -621,6 +642,7 @@ input[type="button"] {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -639,10 +661,25 @@ input[type="button"] {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    /* margin: 100px 0; */
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -745,7 +782,7 @@ input[type="button"] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 40%;
   }
 
   .form-description p {
