@@ -673,6 +673,10 @@ input[type="button"] {
     font-size: 1.5em;
   }
 
+  .map {
+    padding-bottom: 45.57%;
+  }
+
   /*             */
   /*  FAQ Page  */
   /*           */
@@ -777,6 +781,10 @@ input[type="button"] {
 
   .contact-content h4 {
     font-size: 1.875em;
+  }
+
+  .map {
+    padding-bottom: 37.5%;
   }
 
   /* ==========================================================================
